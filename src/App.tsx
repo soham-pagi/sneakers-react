@@ -4,7 +4,9 @@ import { createBrowserRouter } from "react-router";
 import routes from "./Routes";
 import { CartProvider } from "./context/CartProvider";
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, {
+  basename: "/sneakers-react",
+});
 
 export default function App() {
   return (
